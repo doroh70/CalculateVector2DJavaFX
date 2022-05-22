@@ -37,19 +37,20 @@
                <children>
                   <Label text="Starting Vector2D" />
                   <Label text="X:" GridPane.columnIndex="1" />
-                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="76.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="X1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="76.0" GridPane.columnIndex="2" />
                   <Label text="Y:" GridPane.columnIndex="3" />
-                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="73.0" GridPane.columnIndex="4" />
+                  <TextField fx:id="Y1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="73.0" GridPane.columnIndex="4" />
                   <Label text="Ending Vector2D" GridPane.rowIndex="1" />
-                  <TextField maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="76.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="X2" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="76.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                   <Label text="X:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label text="Y:" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="73.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" text="Calculate" GridPane.rowIndex="3" />
-                  <TextField GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+                  <TextField fx:id="Y2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="73.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#OnCalculateButtonClicked" text="Calculate" GridPane.rowIndex="3" />
+                  <TextField fx:id="ResultTextField" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="3" />
                </children>
             </GridPane>
          </children>
       </VBox>
+      <Button layoutX="475.0" layoutY="259.0" mnemonicParsing="false" onAction="#OnClearButtonClicked" text="Clear" />
    </children>
 </AnchorPane>
